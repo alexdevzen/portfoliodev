@@ -26,6 +26,12 @@ const Navbar = () => {
                             Hire Me
                         </button>
                     </ul>
+
+                    <button class="menu-btn" onClick={() => { }}>
+                        <span class={"material-symbols-outlined"} style={{ fontSize: "1.8rem" }}>
+                            menu
+                        </span>
+                    </button>
                 </div>
             </nav>
         </>
