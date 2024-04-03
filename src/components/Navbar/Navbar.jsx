@@ -1,41 +1,63 @@
-import React from 'react'
-import './Navbar.css'
+import React, { useState } from "react";
+import "./Navbar.css";
+import { MobileNav } from "./MobileNav/MobileNav";
 
 const Navbar = () => {
-    return (
-        <>
-            <nav className='nav-wrapper'>
-                <div className='nav-content'>
-                    <img className='logo' src='./assets/images/logo.svg' alt='' />
+    const [openMenu, setOpenMenu] = useState(false);
 
-                    <ul>
-                        <li>
-                            <a className='menu-item'>Home</a>
-                        </li>
-                        <li>
-                            <a className='menu-item'>Skills</a>
-                        </li>
-                        <li>
-                            <a className='menu-item'>Work Experience</a>
-                        </li>
-                        <li>
-                            <a className='menu-item'>Contact Me</a>
-                        </li>
+    const toggleMenu = () => {
+        setOpenMenu(!openMenu);
+    };
 
-                        <button className='contact-btn' onClick={() => { }}>
-                            Hire Me
-                        </button>
-                    </ul>
+  return (
+    <>
 
-                    <button class="menu-btn" onClick={() => { }}>
-                        <span class={"material-symbols-outlined"} style={{ fontSize: "1.8rem" }}>
-                            menu
-                        </span>
-                    </button>
-                </div>
-            </nav>
-        </>
-    )
-}
+<MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
 
-export default Navbar
+      <nav className="nav-wrapper">
+        <div className="nav-content">
+          <img className="logo" src="./assets/images/logo.svg" alt="" />
+
+          <ul>
+            <li>
+              <a href="#" className="menu-item">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="menu-item">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#" className="menu-item">
+                Work Experience
+              </a>
+            </li>
+            <li>
+              <a href="#" className="menu-item">
+                Contact Me
+              </a>
+            </li>
+
+            <button className="contact-btn" onClick={() => {}}>
+              Hire Me
+            </button>
+          </ul>
+
+          <button class="menu-btn" onClick={toggleMenu}>
+            <span
+              class={"material-symbols-outlined"}
+              style={{ fontSize: "1.8rem" }}
+            >
+              
+              {openMenu ? "close" : "menu"}
+            </span>
+          </button>
+        </div>
+      </nav>
+    </>
+  );
+};
+
+export default Navbar;
