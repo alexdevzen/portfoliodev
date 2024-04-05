@@ -2,6 +2,14 @@ import React from "react";
 import "./MobileNav.css";
 
 export const MobileNav = ({ isOpen, toggleMenu }) => {
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div
@@ -12,26 +20,25 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
           <img className="logo" src="./assets/images/logo.svg" alt="" />
 
           <ul>
-            <li>
-              <a className="menu-item">Home</a>
+            <li className="menu-item" onClick={() => scrollToSection('home')}>
+              
+                Home
+             
             </li>
-
-            <li>
-              <a href="#" className="menu-item">
+            <li className="menu-item" onClick={() => scrollToSection("skills")}>
+              
                 Skills
-              </a>
+              
             </li>
-
-            <li>
-              <a href="#" className="menu-item">
+            <li className="menu-item" onClick={() => scrollToSection("workexperience")}>
+              
                 Work Experience
-              </a>
+              
             </li>
-
-            <li>
-              <a href="#" className="menu-item">
+            <li className="menu-item" onClick={() => scrollToSection("contact")}>
+              
                 Contact Me
-              </a>
+              
             </li>
 
             <button className="contact-btn" onClick={() => {}}>

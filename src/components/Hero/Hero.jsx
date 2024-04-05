@@ -3,13 +3,16 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="hero-container">
+    <section className="hero-container" id="home">
       <div className="hero-content">
         <h2>Building Digital Experiences That Inspire</h2>
         <p>
           Passionate Frontend Developer | Transforming Ideas into Seamless and
           Visually Stunning Web Solutions
         </p>
+        <div><button className="contact-btn" onClick={() => {}}>
+              Download CV
+            </button></div>
       </div>
 
       <div className="hero-img">

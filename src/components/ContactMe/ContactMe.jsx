@@ -4,8 +4,9 @@ import ContactInfoCard from "./ContactInfoCard/ContactInfoCard";
 import ContactForm from "./ContactForm/ContactForm";
 
 export const ContactMe = () => {
+
   return (
-    <section className="contact-container">
+    <section className="contact-container" id="contact">
       <h5>Contact Me</h5>
 
       <div className="contact-content">

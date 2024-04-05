@@ -3,41 +3,47 @@ import "./Navbar.css";
 import { MobileNav } from "./MobileNav/MobileNav";
 
 const Navbar = () => {
-    const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
-    const toggleMenu = () => {
-        setOpenMenu(!openMenu);
-    };
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
-
-<MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
+      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
 
       <nav className="nav-wrapper">
         <div className="nav-content">
           <img className="logo" src="./assets/images/logo.svg" alt="" />
 
           <ul>
-            <li>
-              <a href="#" className="menu-item">
+            <li className="menu-item" onClick={() => scrollToSection('home')}>
+              
                 Home
-              </a>
+             
             </li>
-            <li>
-              <a href="#" className="menu-item">
+            <li className="menu-item" onClick={() => scrollToSection("skills")}>
+              
                 Skills
-              </a>
+              
             </li>
-            <li>
-              <a href="#" className="menu-item">
+            <li className="menu-item" onClick={() => scrollToSection("workexperience")}>
+              
                 Work Experience
-              </a>
+              
             </li>
-            <li>
-              <a href="#" className="menu-item">
+            <li className="menu-item" onClick={() => scrollToSection("contact")}>
+              
                 Contact Me
-              </a>
+              
             </li>
 
             <button className="contact-btn" onClick={() => {}}>
@@ -50,7 +56,6 @@ const Navbar = () => {
               class={"material-symbols-outlined"}
               style={{ fontSize: "1.8rem" }}
             >
-              
               {openMenu ? "close" : "menu"}
             </span>
           </button>
