@@ -11,7 +11,7 @@
   width: 28.125rem;
   height: 28.125rem;
   border-radius: 28.125rem;
-  background: #7c66e3;
+  background: #6696e3;
   position: absolute;
   z-index: -1;
   filter: blur(225px); /* fuciona el circulo con el background */
@@ -45,6 +45,23 @@
   line-height: 2rem;
 }
 
+.cv-btn {
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 1.5rem;
+  background: linear-gradient(90deg, #5060ec, #3043e9 100%);
+  padding: 0.6rem 2rem;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
 .hero-img {
   flex: 1;
   display: flex;
@@ -73,7 +90,7 @@
   justify-content: center;
   text-align: center;
   border-radius: 0.65rem;
-  border: 1.5px solid #6852ba;
+  border: 1.5px solid #2d3bdc;
 }
 
 .tech-icon img {
@@ -153,34 +170,34 @@
 
 /* ordena elementos para 600 */
 @media (max-width: 600px) {
-    .hero-content h2 {
-        font-size: 2.2rem;
-        line-height: 3rem;
-    }
+  .hero-content h2 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
 
-    .hero-content p {
-        font-size: 0.8rem;
-        line-height: 1.3rem;
-    }
+  .hero-content p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
 
-    .hero-img {
-        gap: 1rem;
-    }
+  .hero-img {
+    gap: 1rem;
+  }
 
-    .hero-img > div {
-        gap: 1rem;
-    }
+  .hero-img > div {
+    gap: 1rem;
+  }
 
-    .hero-img > div > img {
-        width: 16rem;
-    }
+  .hero-img > div > img {
+    width: 16rem;
+  }
 
-    .tech-icon {
-        width: 3.3rem;
-        height: 3.3rem;
-    }
+  .tech-icon {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
 
-    .tech-icon img {
-        width: 2rem;
-    }
+  .tech-icon img {
+    width: 2rem;
+  }
 }

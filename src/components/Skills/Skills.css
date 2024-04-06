@@ -9,7 +9,7 @@
     width: 28rem;
     height: 28rem;
     border-radius: 28.125rem;
-    background: #7c66e3;
+    background: #666ee3;
     position: absolute;
     z-index: -1;
     filter: blur(200px); /* fuciona el fondo */
@@ -21,7 +21,7 @@
 }
 
 .skills-container::before {
-    background: #9e51b9; /* fuciona el color con otro */
+    background: #5166b9; /* fuciona el color con otro */
     bottom: 0rem;
     right: 0rem;
 }

@@ -20,9 +20,9 @@ form textarea {
     width: 100%;
     font-size: 0.9rem;
     color: #fff;
-    background: #130f2a;
+    background: #06062b;
     border-radius: 0.6rem;
-    border: 1.5px solid #6751b9;
+    border: 1.5px solid #2d3bdc;
     padding: 1rem;
 }
 
@@ -30,16 +30,16 @@ form button {
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
-    border: 1.5px solid #a892fe;
+    border: 1.5px solid #2d3bdc;
     border-radius: 0.6rem;
-    background: linear-gradient(90deg, #a892fe 0%, #8064e8 100%);
+    background: linear-gradient(90deg, #5060ec 0%, #3043e9 100%);
     padding: 0.7rem;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 form button:hover {
-    color: #a892fe;
+    color: #5954f8;
     background: transparent;
 }
 

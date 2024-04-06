@@ -17,10 +17,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #6751b9;
+    color: #2d3bdc;
     border-radius: 0.65rem;
-    border: 1.5px solid #6751b9; /* borde de los botones */
-    background: #130f2a;
+    border: 1.5px solid #2d3bdc; /* borde de los botones */
+    background: #06062b;
     position: absolute;
     top: 55%;
     z-index: 2; /* boton pasa al frente */

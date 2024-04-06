@@ -10,7 +10,7 @@ const Hero = () => {
           Passionate Frontend Developer | Transforming Ideas into Seamless and
           Visually Stunning Web Solutions
         </p>
-        <div><button className="contact-btn" onClick={() => {}}>
+        <div><button className="cv-btn" onClick={() => {}}>
               Download CV
             </button></div>
       </div>

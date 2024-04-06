@@ -1,9 +1,9 @@
 .skills-card {
     border-radius: 0.65rem;
-    border: 1.5px solid #6751b9;
+    border: 1.5px solid #2d3bdc;
     padding: 2.5rem;
     text-align: center;
-    background: rgba(22, 17, 47, 0.398);
+    background: rgba(3, 2, 47, 0.398);
     backdrop-filter: blur(1rem);
     position: relative;
     cursor: pointer;
@@ -13,7 +13,7 @@
 /* cambia de color background de tarjetas */
 .skills-card:hover,
 .skills-card.active {
-    background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
+    background: linear-gradient(180deg, #94a6fed7 0%, #3f5adfb6 100%);
 }
 
 .skills-card span {
@@ -21,7 +21,7 @@
     font-weight: 500;
 }
 
-.skills-icon {
+.skill-icon {
     width: 4rem;
     height: 4rem;
     display: flex;
@@ -29,13 +29,13 @@
     justify-content: center;
     background: #2a2252;
     border-radius: 0.65rem;
-    border: 1.5px solid #6852ba;
+    border: 1.5px solid #2d3bdc;
     position: absolute;
     top: -1rem;
     left: -1rem;
 }
 
-.skills-icon img {
+.skill-icon img {
     width: 2.4rem;
     height: auto;
     object-fit: contain;
@@ -51,12 +51,12 @@
         font-size: 1rem;
     }
     
-    .skills-icon {
+    .skill-icon {
         width: 3rem;
         height: 3rem;
     }
 
-    .skills-icon img {
+    .skill-icon img {
         width: 1.8rem;
     }
 }
