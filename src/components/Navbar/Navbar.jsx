@@ -22,31 +22,23 @@ const Navbar = () => {
 
       <nav className="nav-wrapper">
         <div className="nav-content">
+
           <img className="logo" src="./assets/images/logo.svg" alt="" />
 
           <ul>
             <li className="menu-item" onClick={() => scrollToSection('home')}>
-              
-                Home
-             
+              Home
             </li>
             <li className="menu-item" onClick={() => scrollToSection("skills")}>
-              
-                Skills
-              
+              Skills
             </li>
             <li className="menu-item" onClick={() => scrollToSection("workexperience")}>
-              
-                Work Experience
-              
+              Work Experience
             </li>
             <li className="menu-item" onClick={() => scrollToSection("contact")}>
-              
-                Contact Me
-              
+              Contact Me
             </li>
-
-            <button className="contact-btn" onClick={() => {}}>
+            <button className="contact-btn" onClick={() => { }}>
               Hire Me
             </button>
           </ul>
@@ -56,7 +48,9 @@ const Navbar = () => {
               class={"material-symbols-outlined"}
               style={{ fontSize: "1.8rem" }}
             >
+
               {openMenu ? "close" : "menu"}
+
             </span>
           </button>
         </div>

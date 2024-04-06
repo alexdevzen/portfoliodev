@@ -21,27 +21,19 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
 
           <ul>
             <li className="menu-item" onClick={() => scrollToSection('home')}>
-              
-                Home
-             
+              Home
             </li>
             <li className="menu-item" onClick={() => scrollToSection("skills")}>
-              
-                Skills
-              
+              Skills
             </li>
             <li className="menu-item" onClick={() => scrollToSection("workexperience")}>
-              
-                Work Experience
-              
+              Work Experience
             </li>
             <li className="menu-item" onClick={() => scrollToSection("contact")}>
-              
-                Contact Me
-              
+              Contact Me
             </li>
 
-            <button className="contact-btn" onClick={() => {}}>
+            <button className="contact-btn" onClick={() => { }}>
               Hire Me
             </button>
           </ul>
