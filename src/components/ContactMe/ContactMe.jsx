@@ -10,20 +10,20 @@ export const ContactMe = () => {
       <h5>Contact Me</h5>
 
       <div className="contact-content">
-        
+
         <div style={{ flex: 1 }}>
-        <ContactInfoCard
-          iconUrl="./assets/images/email-icon.svg"
-          text="johndoe@life.com"
-        />
-         <ContactInfoCard
-          iconUrl="./assets/images/github-icon.svg"
-          text="https://github.com/alexdev"
-        />
+          <ContactInfoCard
+            iconUrl="./assets/images/email-icon.svg"
+            text="contact@alexortega.dev"
+          />
+          <ContactInfoCard
+            iconUrl="./assets/images/github-icon.svg"
+            text="https://github.com/alexdevzen"
+          />
         </div>
-       
+
         <div style={{ flex: 1 }}>
-            <ContactForm />
+          <ContactForm />
         </div>
       </div>
     </section>

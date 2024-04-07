@@ -9,6 +9,31 @@
     margin-bottom: 3rem;
 }
 
+.experience-container::after,
+.experience-container::before {
+    content: " ";
+    width: 28rem;
+    height: 28rem;
+    border-radius: 28.125rem;
+    background: #212ab1;
+    position: absolute;
+    z-index: -1;
+    filter: blur(200px);
+    /* fuciona el fondo */
+}
+
+.experience-container::after {
+    top: -3rem;
+    left: 1rem;
+}
+
+.experience-container::before {
+    background: #5166b9;
+    /* fuciona el color con otro */
+    bottom: 0rem;
+    right: 0rem;
+}
+
 /* orden de las flechas */
 .arrow-left,
 .arrow-right {
@@ -19,11 +44,13 @@
     justify-content: center;
     color: #2d3bdc;
     border-radius: 0.65rem;
-    border: 1.5px solid #2d3bdc; /* borde de los botones */
+    border: 1.5px solid #2d3bdc;
+    /* borde de los botones */
     background: #06062b;
     position: absolute;
     top: 55%;
-    z-index: 2; /* boton pasa al frente */
+    z-index: 2;
+    /* boton pasa al frente */
     cursor: pointer;
 }
 
@@ -46,6 +73,7 @@
     .arrow-left {
         left: 0rem;
     }
+
     .arrow-right {
         right: 0rem;
     }
@@ -57,9 +85,11 @@
         font-size: 1.3rem;
         margin-bottom: 2rem;
     }
+
     .arrow-left {
         left: -1rem;
     }
+
     .arrow-right {
         right: -1rem;
     }

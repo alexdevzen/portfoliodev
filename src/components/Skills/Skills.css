@@ -9,19 +9,21 @@
     width: 28rem;
     height: 28rem;
     border-radius: 28.125rem;
-    background: #4c56e5;
+    background: #3842d0;
     position: absolute;
     z-index: -1;
-    filter: blur(200px); /* fuciona el fondo */
+    filter: blur(200px);
+    /* fuciona el fondo */
 }
 
 .skills-container::after {
     top: -3rem;
-    left: -5rem;
+    left: -1rem;
 }
 
 .skills-container::before {
-    background: #5166b9; /* fuciona el color con otro */
+    background: #5166b9;
+    /* fuciona el color con otro */
     bottom: 0rem;
     right: 0rem;
 }
@@ -43,8 +45,10 @@
 .skills {
     flex: 1;
     display: grid;
-    grid-gap: 3rem; /* separación entre tarjetas */
-    grid-template-columns: repeat(2, 1fr); /* pone tarjetas en 2 columnas */
+    grid-gap: 3rem;
+    /* separación entre tarjetas */
+    grid-template-columns: repeat(2, 1fr);
+    /* pone tarjetas en 2 columnas */
 }
 
 .skills-info {

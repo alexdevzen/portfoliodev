@@ -9,9 +9,9 @@ const ExperienceCard = ({ details }) => {
       <div className="work-duration">{details.date}</div>
 
       <ul>
-    {details.responsabilities.map((item) => (
-      <li key={item}>{item}</li>
-    ))}
+        {details.responsabilities.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </div>
   )

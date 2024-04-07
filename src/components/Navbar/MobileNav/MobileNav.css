@@ -16,7 +16,8 @@
 .mobile-menu-container {
     width: 60vw;
     height: 100vh;
-    background-color: #132062; /* color fondo menu desplegable */
+    background-color: #132062;
+    /* color fondo menu desplegable */
     padding: 2rem;
 }
 

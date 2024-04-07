@@ -14,7 +14,8 @@
   background: #5166b9;
   position: absolute;
   z-index: -1;
-  filter: blur(225px); /* fuciona el circulo con el background */
+  filter: blur(225px);
+  /* fuciona el circulo con el background */
 }
 
 .hero-container::after {
@@ -71,13 +72,13 @@
   margin-top: 5rem;
 }
 
-.hero-img > div {
+.hero-img>div {
   display: flex;
   align-items: flex-end;
   gap: 2rem;
 }
 
-.hero-img > div > img {
+.hero-img>div>img {
   width: 25rem;
   transition: all 0.3s ease;
 }
@@ -99,7 +100,7 @@
   transition: all 0.3s ease;
 }
 
-.hero-img > div > img:hover,
+.hero-img>div>img:hover,
 .tech-icon img:hover {
   transform: translateY(-0.5rem);
 }
@@ -116,7 +117,7 @@
     line-height: 1.6rem;
   }
 
-  .hero-img > div > img {
+  .hero-img>div>img {
     width: 20rem;
   }
 
@@ -149,6 +150,7 @@
     width: auto;
     text-align: center;
   }
+
   /* oscurece fondo */
   .hero-container::after,
   .hero-container::before {
@@ -184,11 +186,11 @@
     gap: 1rem;
   }
 
-  .hero-img > div {
+  .hero-img>div {
     gap: 1rem;
   }
 
-  .hero-img > div > img {
+  .hero-img>div>img {
     width: 16rem;
   }
 
