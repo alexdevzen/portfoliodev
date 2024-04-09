@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { MobileNav } from "./MobileNav/MobileNav";
 
-
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -23,23 +22,30 @@ const Navbar = () => {
 
       <nav className="nav-wrapper">
         <div className="nav-content">
-
-          <span onClick={() => scrollToSection('home')}><img className="logo" src="./assets/images/logo.png" alt="" /></span> 
+          <span onClick={() => scrollToSection("home")}>
+            <img className="logo" src="./assets/images/logo.png" alt="" />
+          </span>
 
           <ul>
-            <li className="menu-item" onClick={() => scrollToSection('home')}>
+            <li className="menu-item" onClick={() => scrollToSection("home")}>
               Home
             </li>
             <li className="menu-item" onClick={() => scrollToSection("skills")}>
               Skills
             </li>
-            <li className="menu-item" onClick={() => scrollToSection("workexperience")}>
+            <li
+              className="menu-item"
+              onClick={() => scrollToSection("workexperience")}
+            >
               Work Experience
             </li>
-            <li className="menu-item" onClick={() => scrollToSection("contact")}>
+            <li
+              className="menu-item"
+              onClick={() => scrollToSection("contact")}
+            >
               Contact Me
             </li>
-            <button className="contact-btn" onClick={() => { }}>
+            <button className="contact-btn" onClick={() => {}}>
               Hire Me
             </button>
           </ul>
@@ -49,9 +55,7 @@ const Navbar = () => {
               class={"material-symbols-outlined"}
               style={{ fontSize: "1.8rem" }}
             >
-
               {openMenu ? "close" : "menu"}
-
             </span>
           </button>
         </div>

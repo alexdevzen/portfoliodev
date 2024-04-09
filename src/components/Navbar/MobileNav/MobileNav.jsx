@@ -17,7 +17,7 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
         onClick={toggleMenu}
       >
         <div className="mobile-menu-container">
-          <img className="logo" src="./assets/images/logo.svg" alt="" />
+          <img className="logo" src="./assets/images/logo.png" alt="" />
 
           <ul>
             <li className="menu-item" onClick={() => scrollToSection('home')}>
