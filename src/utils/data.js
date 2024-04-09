@@ -25,6 +25,7 @@ export const SKILLS = [
       { skill: "Visual Studio Code", percentage: "75%" },
       { skill: "Webpack", percentage: "60%" },
       { skill: "Responsive Design", percentage: "70%" },
+      { skill: "Photoshop", percentage: "70%" },
     ],
   },
   {
