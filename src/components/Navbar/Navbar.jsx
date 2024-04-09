@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { MobileNav } from "./MobileNav/MobileNav";
 
+
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -23,7 +24,7 @@ const Navbar = () => {
       <nav className="nav-wrapper">
         <div className="nav-content">
 
-          <img className="logo" src="./assets/images/logo.png" alt="" />
+          <span onClick={() => scrollToSection('home')}><img className="logo" src="./assets/images/logo.png" alt="" /></span> 
 
           <ul>
             <li className="menu-item" onClick={() => scrollToSection('home')}>
