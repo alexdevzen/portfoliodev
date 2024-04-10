@@ -46,7 +46,10 @@
   line-height: 2rem;
 }
 
+
+
 .cv-btn {
+  /* Estilos para el botón */
   font-size: 0.9rem;
   font-weight: 500;
   display: flex;
@@ -60,7 +63,70 @@
   outline: 1.5px solid transparent;
   border-radius: 0.2rem;
   cursor: pointer;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-btn:before {
+  /* Efecto de resaltado al pasar el cursor sobre el botón */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2)
+  );
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.cv-btn:hover:before {
+  /* Efecto de resaltado al pasar el cursor sobre el botón */
+  transform: translateX(100%);
+}
+
+.cv-btn:hover {
+  /* Efecto de sombra al pasar el cursor sobre el botón */
+  box-shadow: 0 0 10px rgba(80, 96, 236, 0.7), 0 0 20px rgba(48, 67, 233, 0.7),
+    0 0 30px rgba(80, 96, 236, 0.7), 0 0 40px rgba(48, 67, 233, 0.7);
+}
+
+.cv-btn.resaltado:before {
+  /* Efecto de resaltado al mostrar el botón */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2)
+  );
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+  animation: resaltado 3s ease infinite;
+}
+
+@keyframes resaltado {
+  /* Animación de efecto de resaltado */
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .hero-img {
@@ -203,3 +269,4 @@
     width: 2rem;
   }
 }
+

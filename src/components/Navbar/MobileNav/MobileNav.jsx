@@ -1,7 +1,8 @@
 import React from "react";
 import "./MobileNav.css";
 
-export const MobileNav = ({ isOpen, toggleMenu }) => {
+export const MobileNav = ({ isOpen, toggleMenu, onHireMeClick }) => {
+  // Función para desplazar la página hasta una sección específica
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -11,13 +12,15 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
 
   return (
     <>
+      {/* Contenedor del menú móvil */}
       <div
         className={`mobile-menu ${isOpen ? "active" : ""}`}
         onClick={toggleMenu}
       >
         <div className="mobile-menu-container">
+          {/* Logo */}
           <img className="logo" src="./assets/images/logo.png" alt="" />
-
+          {/* Lista de elementos del menú */}
           <ul>
             <li className="menu-item" onClick={() => scrollToSection("home")}>
               Home
@@ -37,8 +40,8 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
             >
               Contact Me
             </li>
-
-            <button className="contact-btn" onClick={() => {}}>
+            {/* Botón "Hire Me" */}
+            <button className="contact-btn" onClick={onHireMeClick}>
               Hire Me
             </button>
           </ul>
