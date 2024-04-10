@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
 import AWS from "aws-sdk";
+import validator from "validator";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -29,6 +30,8 @@ const ContactForm = () => {
     }
     if (!formData.email.trim()) {
       errors.email = "Email is required";
+    } else if (!validator.isEmail(formData.email.trim())) {
+      errors.email = "Invalid email format";
     }
     if (!formData.message.trim()) {
       errors.message = "Message is required";
@@ -52,18 +55,18 @@ const ContactForm = () => {
     // Define parámetros de correo electrónico
     const params = {
       Destination: {
-        ToAddresses: ['contact@alexortega.dev'],
+        ToAddresses: ["alex.oitdev@gmail.com"],
       },
       Message: {
         Body: {
           Text: {
             Charset: "UTF-8",
-            Data: `Nombre: ${formData.firstname} ${formData.lastname}\nCorreo electrónico: ${formData.email}\n\n${formData.message}`,
+            Data: `Name: ${formData.firstname} ${formData.lastname}\nEmail: ${formData.email}\n\n${formData.message}`,
           },
         },
         Subject: {
           Charset: "UTF-8",
-          Data: "Nuevo mensaje de contacto",
+          Data: "Message from web Portfolio",
         },
       },
       Source: "alex.devzen@gmail.com",
@@ -72,12 +75,12 @@ const ContactForm = () => {
     // Envía el correo electrónico utilizando SES
     ses.sendEmail(params, (err, data) => {
       if (err) {
-        console.error("Error al enviar el correo electrónico:", err);
+        console.error("Failed to send email:", err);
         // Maneja el error (mostrar mensaje de error al usuario, etc.)
       } else {
-        console.log("Correo electrónico enviado con éxito:", data);
+        console.log("Email sent successfully:", data);
         // Maneja el éxito (mostrar mensaje de confirmación al usuario, etc.)
-        alert("Correo electrónico enviado con éxito");
+        alert("Email sent successfully");
         // Limpia el formulario después de enviar el correo electrónico
         setFormData({
           firstname: "",
