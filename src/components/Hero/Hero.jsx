@@ -76,7 +76,7 @@ const Hero = ({ showDownloadButton }) => {
             <img src="./assets/images/img04.png" alt="" />
           </div>
         </div>
-      </div>
+      </div> 
     </section>
   );
 };
