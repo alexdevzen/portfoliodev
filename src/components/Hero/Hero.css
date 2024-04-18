@@ -46,8 +46,6 @@
   line-height: 2rem;
 }
 
-
-
 .cv-btn {
   /* Estilos para el botón */
   font-size: 0.9rem;
@@ -76,12 +74,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.2)
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.2));
   transform: translateX(-100%);
   transition: all 0.3s ease;
 }
@@ -105,25 +101,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.2)
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.2));
   transform: translateX(-100%);
   transition: all 0.3s ease;
   animation: resaltado 3s ease infinite;
 }
 
 @keyframes resaltado {
+
   /* Animación de efecto de resaltado */
   0% {
     transform: translateX(-100%);
   }
+
   50% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -178,6 +175,11 @@
     line-height: 4rem;
   }
 
+  .hero-content h6 {
+    font-size: 1rem;
+    line-height: 4rem;
+  }
+
   .hero-content p {
     font-size: 0.9rem;
     line-height: 1.6rem;
@@ -207,11 +209,12 @@
     margin: 2rem 0 2rem 0;
   }
 
-  .hero-container h2 {
+  .hero-container h2 h6 {
     margin-top: 3rem;
   }
 
   .hero-content h2,
+  h6,
   .hero-content p {
     width: auto;
     text-align: center;
@@ -243,6 +246,11 @@
     line-height: 3rem;
   }
 
+  .hero-content h6 {
+
+    line-height: 3rem;
+  }
+
   .hero-content p {
     font-size: 0.8rem;
     line-height: 1.3rem;
@@ -269,4 +277,3 @@
     width: 2rem;
   }
 }
-

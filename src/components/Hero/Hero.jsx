@@ -36,10 +36,10 @@ const Hero = ({ showDownloadButton }) => {
   return (
     <section className="hero-container" id="home">
       <div className="hero-content">
-        <h2>Building Digital Experiences That Inspire</h2>
+        <h6>Hey there 👋</h6>
+        <h2>I'm Alex Ortega</h2>
         <p>
-          Passionate Frontend Developer | Transforming Ideas into Seamless and
-          Visually Stunning Web Solutions
+          IT Professional with 15+ years of experience as a Full Stack Developer, Systems Administrator, and Network Specialist. Diverse expertise allows me to deliver innovative, high-impact technology solutions.
         </p>
         <div>
           {/* Renderizamos el botón de descarga del CV si se debe mostrar */}
