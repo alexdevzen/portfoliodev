@@ -4,7 +4,7 @@ export const SKILLS = [
     icon: "./assets/images/frontend-icon.png",
     skills: [
       { skill: "HTML5", percentage: "80%" },
-      { skill: "CSS3 (Sass/SCSS", percentage: "80%" },
+      { skill: "CSS3 (Sass/SCSS)", percentage: "80%" },
       { skill: "JavaScript", percentage: "75%" },
       { skill: "React.js", percentage: "75%" },
     ],
@@ -44,19 +44,30 @@ export const SKILLS = [
 
 export const WORK_EXPERIENCE = [
   {
-    title: "Senior Frontend Developer at Tech Innovators",
-    date: "January 2022 - Present",
-    responsabilities: ["Assisted in the development of a new e-commerce platform, contributing to the implementation of frontend features using Reacts.",
-    "Conducted performance optimization tasks, resulting in a 15% improvement in page load times.",
-    "Participated in daily stand-up meetings and collaborated with senior developers to troubleshoot and resolve coding issues.",
-    "Gained hands-on experience with version control systems, specifically Git, in a collaborative development environment.",],
+    title: "Full Stack Developer - AT Solutions",
+    date: "Nov 2023 - May 2024",
+    responsabilities: ["Led the successful redesign and migration of the company's web platform.",
+      "Drove a 25% increase in web traffic and a 30% reduction in load times."],
   },
   {
-    title: "Junior Web Developer",
-    date: "Febrary 2021 - 2022",
-    responsabilities: ["Led a team of frontend developers in the redesign of the company's flagship product, resulting in a 30% increase in user satisfaction.",
-    "Implemented advanced CSS animations and transitions to enhance the overalll user experience.",
-    "Collaborated with Ux/UI designers to translate wireframes and mockups into responsive and interactive web applications.",
-    "Introduced and integrated Vuejs into the tech stack, improving code maintainability and development efficiency."],
+    title: "Full Stack Developer - Lintec",
+    date: "Jan 2022 - Present",
+    responsabilities: ["Designed and implemented custom web and e-commerce solutions for multiple clients.",
+      "Acquired expertise in design tools like Photoshop and cloud technologies like AWS.",
+      "Implemented Docker architectures to improve system scalability and efficiency.",
+      "Led project teams for the successful development and deployment of projects."],
+  },
+  {
+    title: "Full Stack Developer - Interluz",
+    date: "Sep 2017 - Jan 2022",
+    responsabilities: ["Implemented monitoring systems that reduced service failures by 80%, significantly improving the quality of internet service for clients.",
+      "Redesigned the captive portals for the hotspot network, increasing internet access speeds by 50% and mitigating connection errors.",
+      "Directed teams for the modernization and optimization of the data center.",
+      "Successfully won and executed high-profile government projects for the Ministry of Education, driving substantial company growth."],
+  },
+  {
+    title: "Full Stack Developer - Tekné",
+    date: "Sep 2009 - Jan 2017",
+    responsabilities: ["Integrated into the local market, supporting multiple companies to establish their web presence and significantly expand their sales and services nationwide."],
   },
 ];

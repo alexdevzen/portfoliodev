@@ -30,7 +30,7 @@ const Hero = ({ showDownloadButton }) => {
 
   // Función para manejar el clic en el botón de descarga del CV
   const handleDownloadCV = () => {
-    window.open("/download/CV_Alex_Ortega_ENG.pdf", "_blank");
+    window.open("/download/Resume_Alex_Ortega.pdf", "_blank");
   };
 
   return (
@@ -45,9 +45,8 @@ const Hero = ({ showDownloadButton }) => {
           {/* Renderizamos el botón de descarga del CV si se debe mostrar */}
           {showDownloadButton && (
             <button
-              className={`cv-btn ${
-                isDownloadButtonEnabled ? "enabled" : "disabled"
-              } ${showResaltado ? "resaltado" : ""}`}
+              className={`cv-btn ${isDownloadButtonEnabled ? "enabled" : "disabled"
+                } ${showResaltado ? "resaltado" : ""}`}
               onClick={handleDownloadCV}
               disabled={!isDownloadButtonEnabled}
             >
@@ -76,7 +75,7 @@ const Hero = ({ showDownloadButton }) => {
             <img src="./assets/images/img04.png" alt="" />
           </div>
         </div>
-      </div> 
+      </div>
     </section>
   );
 };
