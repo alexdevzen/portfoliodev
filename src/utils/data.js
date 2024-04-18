@@ -44,10 +44,12 @@ export const SKILLS = [
 
 export const WORK_EXPERIENCE = [
   {
-    title: "Full Stack Developer - AT Solutions",
+    title: "Full Stack Developer - AT Solutions (atsolutionschile.com)",
     date: "Nov 2023 - May 2024",
-    responsabilities: ["Led the successful redesign and migration of the company's web platform.",
-      "Drove a 25% increase in web traffic and a 30% reduction in load times."],
+    responsabilities: ["Successfully led the redesign and migration of the company's web platform.",
+      "Achieved a 25% increase in web traffic.",
+      "Reduced load times by 30%.",
+      "Designed the corporate logo for this company and an additional 3 client organizations. LS Rental, CatChile, ChileSur."],
   },
   {
     title: "Full Stack Developer - Lintec",
@@ -58,7 +60,7 @@ export const WORK_EXPERIENCE = [
       "Led project teams for the successful development and deployment of projects."],
   },
   {
-    title: "Full Stack Developer - Interluz",
+    title: "Full Stack Developer - Interluz (interluz.cl)",
     date: "Sep 2017 - Jan 2022",
     responsabilities: ["Implemented monitoring systems that reduced service failures by 80%, significantly improving the quality of internet service for clients.",
       "Redesigned the captive portals for the hotspot network, increasing internet access speeds by 50% and mitigating connection errors.",
@@ -68,6 +70,9 @@ export const WORK_EXPERIENCE = [
   {
     title: "Full Stack Developer - Tekné",
     date: "Sep 2009 - Jan 2017",
-    responsabilities: ["Integrated into the local market, supporting multiple companies to establish their web presence and significantly expand their sales and services nationwide."],
+    responsabilities: ["Integrated into the local market, supporting multiple companies to establish their web presence and significantly expand their sales and services nationwide.",
+      "Worked with platforms like WordPress, WooCommerce, and OpenCart to develop web and e-commerce solutions.",
+      "Optimized client websites to improve search engine positioning (SEO).",
+      "Implemented digital marketing strategies, including social media campaigns and online advertising, to drive lead generation and sales."],
   },
 ];
